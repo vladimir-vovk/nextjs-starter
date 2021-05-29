@@ -12,4 +12,4 @@
 
 ## Branches
 
-- 'empty-project' check [Start New Next.js Project Notes](https://dev.to/vladimirvovk/start-new-next-js-project-notes-13m3) for details
+- `empty-project` check [Start New Next.js Project Notes](https://dev.to/vladimirvovk/start-new-next-js-project-notes-13m3) for details
