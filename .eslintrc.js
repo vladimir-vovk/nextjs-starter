@@ -27,6 +27,8 @@ module.exports = {
         'plugin:prettier/recommended'
       ],
       rules: {
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/ban-ts-comment': 'off',
         'prettier/prettier': ['error', {}, { usePrettierrc: true }],
         'react/prop-types': 'off',
 
@@ -37,16 +39,7 @@ module.exports = {
         'jsx-a11y/anchor-is-valid': 'off',
 
         // Why would you want unused vars?
-        '@typescript-eslint/no-unused-vars': ['error'],
-
-        // I suggest this setting for requiring return types on functions only where useful
-        '@typescript-eslint/explicit-function-return-type': [
-          'warn',
-          {
-            allowExpressions: true,
-            allowConciseArrowFunctionExpressionsStartingWithVoid: true
-          }
-        ]
+        '@typescript-eslint/no-unused-vars': ['error']
       }
     }
   ]

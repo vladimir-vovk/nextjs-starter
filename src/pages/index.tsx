@@ -1,7 +1,13 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import { Button, Box } from '@chakra-ui/react'
+import { useLoadingProgress } from 'src/services'
+import { ReactElement } from 'react'
 // import styles from 'src/styles/Home.module.css'
 
-export default function Home() {
+export default function Home(): ReactElement {
+  const { start } = useLoadingProgress()
+
   return (
     <div>
       <Head>
@@ -14,6 +20,13 @@ export default function Home() {
         <h1>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+
+        <Link href="/second-page">Second page</Link>
+        <Box>
+          <Button mr={4} onClick={() => start()}>
+            Start
+          </Button>
+        </Box>
       </main>
     </div>
   )

@@ -13,3 +13,8 @@
 ## Branches
 
 - `empty-project` check [Start New Next.js Project Notes](https://dev.to/vladimirvovk/start-new-next-js-project-notes-13m3) for details
+
+- `loading-progress` check [Page Loading Progress with Next.js and Chakra UI]() for details
+
+<img src="./screens/loading-progress.gif" width="400"></img>
+<img src="./screens/loading-progress-slow.gif" width="400"></img>
